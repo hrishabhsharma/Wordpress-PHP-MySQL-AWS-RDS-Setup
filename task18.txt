@@ -19,19 +19,24 @@ dnf module install php:remi-7.4
 5) To download the WordPress installation package
 wget https://wordpress.org/latest.tar.gz
 
-6) extracting package and copying wordpress folder to doocument root
+6) extracting package and copying wordpress folder to document root /var/www/html
 tar -xvzf latest.tar.gz -C /var/www/html 
 
 7)Permissions:
 chown -R apache:apache /var/www/html/wordpress
 chcon -t httpd_sys_rw_content_t /var/www/html/wordpress -R
 
+8) Creating MySQL Database on AWS using RDS Service
 
 9)MYSQL Installation
 dnf install mysql -y
 
 10)MySQL login
 mysql -h endpoint -u -p
+
+11) Starting httpd services
+
+12) Connecting with WordPress
 
 
 
