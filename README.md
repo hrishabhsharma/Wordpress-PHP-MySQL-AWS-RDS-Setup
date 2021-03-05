@@ -1,6 +1,7 @@
 ### Wordpress-PHP-MySQL-AWS-RDS-Setup
 #
-* Requirements
+ 
+ **Requirements**
 
 * Installing Apache httpd Webserver
 ```
